@@ -5,8 +5,8 @@ O repositório serve como portifólio para exibir o desenvolvimento de exercíci
 > Resumo: Portifólio para exibição de exercícios e evolução na aplicação de Conceitos de Programação.
 
 ## Pastas do Projeto
-- *[aulas](https://github.com/Matheus-SBrito/POO_exercicios/tree/main/aulas)*: A pasta aulas está sendo utilizada para compartilhar exercícios e pequenas práticas realizadas em sala de aula.
-- *[xadrez](https://github.com/Matheus-SBrito/POO_exercicios/tree/main/xadrez)*: A pasta xadrez está sendo utilizada como um projeto **Open Source**, paralelo ao conteúdo e a ementa da matéria, desenvolvido durante as aulas.
+- *[aulas](https://github.com/Matheus-SBrito/ProjetosExercicios_ADS2P/tree/main/aulas)*: A pasta aulas está sendo utilizada para compartilhar exercícios e pequenas práticas realizadas em sala de aula.
+- *[xadrez](https://github.com/Matheus-SBrito/ProjetosExercicios_ADS2P/tree/main/xadrez)*: A pasta xadrez está sendo utilizada como um projeto **Open Source**, paralelo ao conteúdo e a ementa da matéria, desenvolvido durante as aulas.
 
 ## Especificações Básicas de Desenvolvimento
 - Linguagem de Programação utilizada: Java.
