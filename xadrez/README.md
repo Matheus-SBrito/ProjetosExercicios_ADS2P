@@ -1,0 +1,1 @@
+A idéia do jogo é desenvolver uma melhor capacidade de Programação Orientada a Objetos(POO), nele será utilizado, num primeiro momento, somente dados do tipo primitivo (int, float, boolean, etc.), listas e classes para a estrurar o jogo, além disso, será utilizado somente o terminal para jogar o jogo. 

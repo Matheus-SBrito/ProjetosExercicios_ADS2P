@@ -1,0 +1,64 @@
+Convenções de Programação POO:
+
+    -- Padrão de Nomenclatura
+        * Váriaveis/atributo: Camel case
+        * Metodos: Camel case
+        * Classes: Camel Case
+        * Constantes: Snake Case
+
+            ° Camel Case - 
+            
+            Classes, A primeira letra de cada palavra é
+            maiúscula. Exemplo: CelularNacional.
+
+            Atributos/Váriaveis/Métodos, a primeira palavra tem 
+            sua letra minuscula e todas as outras palavras não
+            tem a primeira letra maiuscula. Exemplo: ligarCelular.
+
+
+            ° CREAMING_SNAKE_CASE - 
+
+            Constantes, Todos os caracteres do nome devem ser em 
+            caixa alta. Os espaços entre as palavras do nome da 
+            constante são substituídos por '_'.
+
+
+    -- Configuração de Acessibilidade
+
+    Os atributos e o padrão de acessibilidade em Java são 
+    definidos por quatro modificadores principais: private, 
+    default e public. Eles controlam a visibilidade dos dados 
+    de uma classe para garantir a segurança e o encapsulamento 
+    do código.
+
+    Atributos privados: Deixe sempre os atributos de uma 
+    classe como private para garantir o encapsulamento correto.
+
+    Métodos públicos de acesso: Use métodos get e set públicos 
+    caso outras classes precisem ler ou alterar os valores 
+    protegidos.
+
+    Menor privilégio: Comece sempre usando o nível mais 
+    restritivo (private) e aumente a visibilidade 
+    (protected ou public) apenas se houver real 
+    necessidade.
+
+    -- Utilização do '.this' em Classes
+
+    ° Diferenciar nomes iguais: Ajuda a separar uma variável da 
+    classe (atributo) de um parâmetro de método que tem o mesmo 
+    nome. 
+    
+    Exemplo: this.nome = nome;
+    
+    
+    ° Chamar construtores: Permite que um construtor chame outro 
+    construtor da mesma classe para aproveitar códigos prontos. 
+    
+    Exemplo: this();
+    
+
+    ° Passar o objeto atual: Envia a própria instância da classe 
+    como argumento para outro método ou construtor. 
+
+    Exemplo: outroMetodo(this);
