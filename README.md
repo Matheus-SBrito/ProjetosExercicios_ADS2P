@@ -21,7 +21,8 @@ O repositório serve como portifólio para exibir o desenvolvimento de exercíci
   - Fornecer uma visão geral da alteração.
   - Fazer uma lista ordenada dos principais arquivos alterados e sua respectiva alteração.
   - Exemplo:
-    - ```txt
+
+     ```txt
       Xadrez
       doc, backend e frontend
       
@@ -37,7 +38,7 @@ O repositório serve como portifólio para exibir o desenvolvimento de exercíci
   - Descrever um resumo pequeno das alterações
   - Exemplo:
   
-    - ``` git
+     ``` git
       padrão do texto do commit: "[projeto_alterado]: [descrição geral da alteração]"
       
       $ git commit -m "Xadrez: alteração nas instancias das classes."
