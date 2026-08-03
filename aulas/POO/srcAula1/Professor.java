@@ -1,4 +1,4 @@
-package aulas.srcAula1;
+package aulas.POO.srcAula1;
 
 public class Professor {
 
