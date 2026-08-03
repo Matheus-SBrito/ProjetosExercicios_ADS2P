@@ -1,4 +1,4 @@
-# Resolução - lista da semana 2, 4º questão.
+# Resolução - lista da semana 2, Projeto Planejador de Viagens.
 
 Crie uma classe chamada Carro. Essa classe vai possuir os atributos chamado:modelo (String), autonomia (do tipo float) capacidade do tanque (inteiro). A autonomia de um carro consiste na quantidade de quilômetros que o carro consegue percorrer com um 1 litro de combustível. A capacidade do tanque consiste na quantidade de litros de combustível que cabem no tanque do carro. Respeite as convenções de nomenclatura e visibilidade que estudamos.
 
@@ -42,3 +42,7 @@ class Planejador{
 ### Planejador
 
 - **'abastecimento()':** Este método retornará uma estimativa da quantidade de abastecimentos que o carro precisará fazer para chegar ao destino.
+
+## Problema
+
+Crie um programa onde você vai perguntar ao usuário qual o modelo, a autonomia e a capacidade do tanque dele. Em seguida, pergunte qual a distância que ele pretende percorrer até o destino. Utilize um objeto planejador para informar ao usuário a quantidade de abastecimentos que ele precisará realizar, até chegar ao destino
