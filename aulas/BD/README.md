@@ -158,3 +158,146 @@ Um atributo composto é uma característica de uma entidade que pode ser dividid
 ### Conlusão
 
 Um banco de dados mal projetado apresenta anomalias na inserção, consequentemente, haverá redundância e inconsistêncuas. A Normalização é processo de adequar o banco de dados.
+
+## DDL - Data Definition Language (Linguagem de Definição de Dados)
+
+```mysql
+
+# Criar banco de dados
+CREATE DATABASE db_vetpet;
+
+# Criação do banco de dados.
+# CREATE DATABASE vp_vetpet;
+
+
+# Utilização do banco de dados.
+USE vp_vetpet;
+
+
+# Criação de uma tabela no banco de dados.
+CREATE TABLE Tutor (
+
+	id_tutor INT AUTO_INCREMENT PRIMARY KEY, # CONSTRAINTS - Regras do atributo ou restrições de um atributo.
+    nome_tutor VARCHAR(130) NOT NULL,
+    cpf_tutor CHAR(11) NOT NULL UNIQUE,
+    email_tutor VARCHAR(30) NOT NULL,
+    data_nasc_tutor DATE,
+    telefone_tutor CHAR(11)
+    
+);
+
+# Inserção de dados numa tabela.
+
+	# Especificando a Tabela, a ordem e os atributos
+
+INSERT INTO Tutor (
+	nome_tutor,
+    cpf_tutor,
+    email_tutor,
+    data_nasc_tutor
+) VALUES 
+    ("Irineu", "11111111111", "teste", "2123-12-13"),
+    ("Irineu", "22222222222", "teste", "2123-12-13"),
+    ("Irineu", "33333333333", "teste", "2123-12-13"),
+    ("Irineu", "44444444444", "teste", "2123-12-13");
+
+# Pesquisas Gerais.
+SELECT * FROM TUTOR;
+
+# Pesquisas com campos especificos.
+SELECT cpf_tutor FROM TUTOR;
+
+
+# Pesquisas com filtragem.
+SELECT * FROM TUTOR
+WHERE cpf_tutor = "11111111111";
+
+# Alteração de dados.
+UPDATE Tutor
+SET email_tutor = "irineu"
+WHERE id_tutor = 2;
+
+# Alteração de multiplas instancias.
+UPDATE Tutor
+SET telefone_tutor = "12312312312"
+WHERE id_tutor = 1 OR id_tutor = 2; # Em caso de UPDATE e DELETE só é permitido condicionantes com chave primária.
+
+# Apaga todas as instâncias da tabela
+TRUNCATE TABLE tutor;
+
+# Excluir tabela
+DROP TABLE Tutor;
+
+#
+
+```
+
+
+```
+
+# Criação do banco de dados.
+# CREATE DATABASE vp_vetpet;
+
+
+# Utilização do banco de dados.
+USE vp_vetpet;
+
+
+# Criação de uma tabela no banco de dados.
+CREATE TABLE Tutor (
+
+	id_tutor INT AUTO_INCREMENT PRIMARY KEY, # CONSTRAINTS - Regras do atributo ou restrições de um atributo.
+    nome_tutor VARCHAR(130) NOT NULL,
+    cpf_tutor CHAR(11) NOT NULL UNIQUE,
+    email_tutor VARCHAR(30) NOT NULL,
+    data_nasc_tutor DATE,
+    telefone_tutor CHAR(11)
+    
+);
+
+CREATE TABLE Pet (
+
+	id_pet INT AUTO_INCREMENT PRIMARY KEY,
+    
+		id_tutor INT NOT NULL,
+		FOREIGN KEY (id_tutor) REFERENCES Tutor(id_tutor),
+    
+    nome_pet VARCHAR(50) NOT NULL,
+    
+		id_tipo_pet INT NOT NULL,
+        FOREIGN KEY (id_tipo_pet) REFERENCES Tipo_Pet (id_tipo_pet),
+        
+	data_nasc_pet DATE
+
+);
+
+	CREATE TABLE Tipo_Pet (
+		
+		id_tipo_pet INT AUTO_INCREMENT PRIMARY KEY,
+		nome_tipo_pet VARCHAR(50) NOT NULL
+		
+	);
+
+# Inserção de dados numa tabela.
+
+	# Especificando a Tabela, a ordem e os atributos
+
+INSERT INTO Tutor(
+	nome_tutor,
+    cpf_tutor,
+    email_tutor,
+    data_nasc_tutor,
+    telefone_tutor
+) VALUES 
+    ("Irineu", "11111111111", "teste", "2123-12-13", "12312312312");
+    
+    
+INSERT INTO Tipo_Pet(nome_tipo_pet)
+VALUES ("Cachorro");
+    
+    
+# Comando de Cruzamento de Tabelas INNER JOIN
+
+
+
+```
