@@ -47,6 +47,8 @@ public class Programa {
             pessoa2,
             false, 
             false);
+            
+        input.close();
     }
 
 }
