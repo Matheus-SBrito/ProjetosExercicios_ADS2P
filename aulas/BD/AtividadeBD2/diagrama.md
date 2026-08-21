@@ -62,3 +62,36 @@ Departamento {
 
 Funcionario }| -- || Departamento : "Cada departamento tem varios funcionarios, e um funcionario tem somente um departamento."
 ```
+
+## Questão 3
+
+```mermaid
+erDiagram
+
+Categoria {
+
+    codigo_categoria INT PK "AUTO_INCREMENT"
+
+    nome_categoria VARCHAR(50) "NOT NULL"
+
+    descricao TEXT
+
+}
+
+Produto {
+
+    codigo_produto INT PK "AUTO_INCREMENT"
+
+    codigo_categoria INT FK "NOT NULL"
+
+    nome_produto VARCHAR(50) "NOT NULL"
+
+    preco DOUBLE(12)
+
+    estoque INT(3)
+
+}
+
+Categoria || -- |{ Produto : "Uma categoria pode possuir vários produtos, mas cada produto pertence a apenas uma categoria"
+
+```
