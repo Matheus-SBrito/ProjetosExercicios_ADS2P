@@ -9,7 +9,7 @@ public class Programa2 {
         int soma = 0;
         
         do {
-            num = Integer.parseInt(input.nextLine())
+            num = Integer.parseInt(input.nextLine());
             soma+=num;
         }while (num != -1);
         System.out.println(num);
