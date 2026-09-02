@@ -8,8 +8,19 @@ public class q3 {
         
         Scanner input = new Scanner (System.in);
         System.out.println("Número na base Hexadecimal: ");
-        int hexaNumero = Integer.parseInt(input.nextLine());
-        System.out.println("Base Binária: " + Integer.toBinaryString(hexaNumero));
+        String hexaNumero = input.nextLine();
+        hexaNumero = switch(hexaNumero.toUpperCase()){
+            case "A" -> "10";
+            case "B" -> "11";
+            case "C" -> "12";
+            case "D" -> "13";
+            case "E" -> "14";
+            case "F" -> "15";
+            default -> hexaNumero;
+        };
+
+        
+        System.out.println("Base Binária: " + Integer.toBinaryString(Integer.parseInt(hexaNumero)));
         System.out.println("Base Decimal: " + Integer.parseInt(""+hexaNumero, 16));
         input.close();
     }

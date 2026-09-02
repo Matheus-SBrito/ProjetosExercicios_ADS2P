@@ -15,9 +15,9 @@ public class q2 {
         for (
             int indice = 0;
             indice < texto.length();
-            caractere = texto.charAt(indice),
             indice ++){
-
+            
+            caractere = texto.charAt(indice);
             if (Character.isLetter(caractere))
                 if (listaConsoantes.indexOf(caractere) != -1) consoantes ++;
                 else vogais++;
