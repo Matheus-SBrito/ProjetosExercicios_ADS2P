@@ -21,7 +21,7 @@ public class q3 {
 
         
         System.out.println("Base Binária: " + Integer.toBinaryString(Integer.parseInt(hexaNumero)));
-        System.out.println("Base Decimal: " + Integer.parseInt(""+hexaNumero, 16));
+        System.out.println("Base Decimal: " + Integer.parseInt(hexaNumero));
         input.close();
     }
 

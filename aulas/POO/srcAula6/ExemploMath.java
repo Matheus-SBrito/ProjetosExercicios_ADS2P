@@ -1,5 +1,3 @@
-import java.util.function.Function;
-
 public class ExemploMath {
     
     public static void main(String[] args) {

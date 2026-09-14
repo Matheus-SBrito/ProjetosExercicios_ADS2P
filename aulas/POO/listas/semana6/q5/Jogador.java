@@ -42,9 +42,11 @@ public class Jogador {
         do{
 
             System.out.println("Digite um número qualquer:");
+
             numMaquina = (int) Math.round(Math.random() * 10);
             soma  =(Integer.parseInt(input.nextLine()) + numMaquina);
 
+            System.out.println("Numero maquina: " + numMaquina);
             System.out.println("Resultado da soma: " + soma);
 
 
@@ -56,7 +58,7 @@ public class Jogador {
             else vencedor = pessoa;
 
         
-        }while(vencedor.getQuantidadePontos() == 10);
+        }while(vencedor.getQuantidadePontos() < 2);
 
         System.out.println("Jogador vencedor: " + vencedor.getNome());
         input.close();

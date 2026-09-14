@@ -7,8 +7,8 @@ public class Programa {
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
-
         Carro carro1 = new Carro();
+        carro1.toString();
         Planejador planejador1 = new Planejador();
         float distanciaPercorrida;
 
