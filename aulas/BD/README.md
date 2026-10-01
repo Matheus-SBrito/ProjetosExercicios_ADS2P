@@ -64,3 +64,26 @@ erDiagram
     AA }|--|{ BB : Relacionamento
     ```
 
+## Anomalias Banco de Dados
+
+### Anomalia de Inserção
+
+x
+
+### Anomalia de Alteração
+
+x
+
+### Anomalia de Exclusão
+
+x
+
+## Normalização do Banco de dados
+
+Conjunto de formas normais. No mínimo:
+
+- 1FN
+- 2FN
+- 3FN
+
+### 1° Forma Normal
