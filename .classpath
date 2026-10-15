@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry excluding="aulas/POO/srcAula2/|aulas/POO/listas/semana4/|aulas/POO/srcAula6/|aulas/POO/listas/semana2/" kind="src" path=""/>
+	<classpathentry kind="src" path="aulas/POO/listas/semana2"/>
+	<classpathentry kind="src" path="aulas/POO/listas/semana4"/>
+	<classpathentry kind="src" path="aulas/POO/srcAula2"/>
+	<classpathentry kind="src" path="aulas/POO/srcAula6"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
