@@ -1,9 +1,11 @@
 package aulas.POO.laboratorios.laboratorio8;
 
-public class Pitu {
+public class Pitu extends Bebida{
 
 	public Pitu() {
-		// TODO Auto-generated constructor stub
+		setNome("Pitu");
+		setTeorAlcoolico(0.4f);
+		setPreco(4.5);
 	}
 
 }
