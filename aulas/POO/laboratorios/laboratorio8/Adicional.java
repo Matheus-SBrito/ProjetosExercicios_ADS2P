@@ -11,6 +11,7 @@ public class Adicional extends Bebida{
 		
 		return getNome() +", "+ bebida.getNome();}
 	public double getPreco() {return getPreco() + bebida.getPreco();}
-	public float getTeorAlcolico() {return getTeorAlcolico()+bebida.getTeorAlcolico();}
+	public float getTeorAlcolico() {return getTeorAlcolico()+bebida.getTeorAlcoolico();
+	}
 
 }
