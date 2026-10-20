@@ -1,9 +1,9 @@
 package aulas.POO.laboratorios.laboratorio8;
 
-public class TeorAlcoolicoNegativoException {
+public class TeorAlcoolicoNegativoException extends Exception{
 
 	public TeorAlcoolicoNegativoException() {
-		// TODO Auto-generated constructor stub
+		super("O teor alcoolico não pode ser negativo");
 	}
 
 }

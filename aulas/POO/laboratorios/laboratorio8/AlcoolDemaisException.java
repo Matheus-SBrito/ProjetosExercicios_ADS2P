@@ -1,9 +1,9 @@
 package aulas.POO.laboratorios.laboratorio8;
 
-public class AlcoolDemaisException {
+public class AlcoolDemaisException extends Exception{
 
 	public AlcoolDemaisException() {
-		// TODO Auto-generated constructor stub
+		super(" Teor alcoolico da bebida é maior que 1.2");
 	}
 
 }
